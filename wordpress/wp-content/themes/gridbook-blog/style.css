@@ -1,0 +1,342 @@
+/*
+ Theme Name:   Gridbook Blog
+ Theme URI:    
+ Description:  Gridbook Blog is child theme of logbook wp blog theme. Gridbook Blog is free, personal, elegent WordPress blog theme. Gridbook Blog theme having setting in customizer and can check live change of settings. Grid having topbar header, social icons, sidebar features and many more features. Gridbook Blog is a perfect responsive magazine style WordPress theme. This theme is suitable for news, newspaper, magazine, publishing, business and any kind of sites. Grid is a 100% GPL and minimal WordPress blog theme. Also theme is Gutenberg ready. So it will work fie with the latest version of WordPress. Theme is compatible with all blocks and patterns of WordPress. This theme is developed based on customizer settings. You can see the live changes that you have made in customizer. Grid also comes with added custom widgets for author, featured posts and social icons. It has top level menu, social icons, slider, promotional banner, sidebar option & many more other features. In addition, it has copyright text, go to the top, footer widgets, blog page options, related posts, sidebar, etc. This theme is lightweight and easy to use theme for travel blog, food blog, technology blog and fashion blog or any type of news website. You can also use this theme for personal blog and magazine sites too. Furthermore, it comes with demo data to make the site like the demo, detailed documentation including video and text, free support via chat and forum. It is developed by the experts WordPress developers so that you will never look for alternatives after using this theme. Try this awesome and carefully crafted theme today.
+ Author:       blogwp
+ Author URI:   
+ Template:     logbook-wp
+ Version:      1.0.2
+ Requires at least: 5.5
+ Tested up to: 5.8
+ Requires PHP: 5.6
+ License:      GNU General Public License v2 or later
+ License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+ Tags:         left-sidebar, right-sidebar, custom-logo, custom-menu, featured-images, footer-widgets, custom-colors, custom-header, theme-options, threaded-comments, blog
+ Text Domain:  gridbook-blog
+*/
+
+*{
+    font-family: 'Cormorant Garamond', serif;
+}
+
+.wp-main-header .logo-area a {
+    font-size: 5rem;
+    letter-spacing: -.02em;
+    font-weight: 400;
+    margin: 0;
+    line-height: 1.1;
+    color:#c22828;
+}
+
+
+.sticky-nav.gridbook-blog-sticky{
+    margin-top: 32px !important;
+}
+.sticky-nav.gridbook-customize-preview{
+    margin-top: 0px !important;
+}
+
+.wp-main-header .logo-area p {
+    font-size: 1rem;
+    font-weight: 400;
+    letter-spacing: .12em;
+    color: #181818;
+}
+
+.site-title {
+    position: relative;
+    padding: 1.3rem 0 1.2rem;
+}
+
+.site-title:after {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    content: "";
+    height: 1px;
+    margin-top: 0.1rem;
+    background-color: #d3d3d3;
+}
+
+.site-title a {
+    display: inline-block;
+    position: relative;
+    line-height: 1.1;
+    z-index: 101;
+    background-color: #f8f8f8;
+    padding: 0 2.5rem;
+}
+
+.wp-main-header .logo-area .site-description {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.nav-brand {
+    background: #f8f8f8;
+}
+
+.bg-color {
+    background: #f8f8f8;
+}
+
+.logbook-wp-wp-blog-section {
+    background: #f8f8f8;
+}
+
+.logbook-wp-main-navigation .wrapper {
+    background: #f8f8f8;
+    padding: 10px 0;
+}
+
+.logbook-wp-main-navigation ul.logbook-wp-nav-menu > li > a {
+    color: #000000;
+}
+
+.logbook-wp-main-navigation ul.logbook-wp-nav-menu > li:hover > a, .logbook-wp-main-navigation ul.logbook-wp-nav-menu > li.focus > a {
+    color: #c22828;
+}
+
+.logbook-wp-main-navigation ul ul li:hover > a, .logbook-wp-main-navigation ul ul li.focus > a {
+    background-color: #c22828;
+    color: #fff;
+}
+
+.post {
+    position: relative;
+    background:#fff;
+    overflow: hidden;
+    width: 100%;
+    box-shadow:none;
+    margin: 0 24px 24px 0;
+    display: inline-block;
+    border-radius: 0px;
+    transition: all 0.25s ease-in-out;
+}
+
+.post-sub-link ul:not(.author-category-meta):not(.post-categories) li:not(.entry-author-avatar):not(.entry-read-time):not(:last-child):after {
+    display: inline-block;
+    content: "";
+    width: 1px;
+    background-color: #d3d3d3;
+    height: 1.1rem;
+    margin: 0 0.5rem 0 0.6rem;
+    position: relative;
+    bottom: -0.3rem;
+}
+
+.read-more:before{
+ display: none;
+}
+
+.read-more:after {
+    content: '\f101';
+    font-family: fontAwesome;
+    position: absolute;
+   top: 27px;
+    left: 70px;
+    color: #c22828;
+    line-height: 18px;
+    font-size: 15px;
+}
+
+.post-readmore {
+    clear: both;
+    display: block;
+    padding: 23px 0 0;
+    position: relative;
+    margin-top: 30px;
+    width: 72px;
+    text-align: left;
+    border-top: 1px solid #c22828;
+    color: #888;
+    transition: 0.5s;
+}
+
+.post-sub-link a:hover {
+    color: #c22828 !important;
+}
+
+@media screen and (max-width: 2560px) {
+    .wp-index-blog-section {
+      column-width: 20vw !important;
+      width: 70% !important;
+   }
+}
+
+@media screen and (max-width: 1600px) {
+    .wp-index-blog-section {
+      column-width: 20vw !important;
+      width: 80% !important;
+   }
+}
+
+@media screen and (max-width: 1440px) {
+    .wp-index-blog-section {
+        width: 80%!important;
+        column-width: 20vw !important;
+    }
+}
+
+
+@media screen and (max-width: 1024px) {
+
+    .wp-index-blog-section {
+        width: 90%!important;
+        column-width: 20vw !important;
+    }
+
+}
+
+@media screen and (max-width: 1023px) {
+  .logbook-wp-main-navigation .wrapper {
+      background: #000000 !important;
+      padding: 10px 0;
+  }
+  .wp-index-blog-section {
+     background: #f8f8f8;
+     width: 100% !important;
+  }
+}
+
+.wp-index-blog-section {
+    grid-gap: 32px;
+    column-width: 15vw;
+}
+
+.wp-index-blog-section {
+    background: #f8f8f8;
+    width: 65%;
+    padding: 40px 10px;
+}
+
+.logbook-wp-wp-blog-section .pagination {
+    display: -ms-flexbox;
+    display: flex;
+    padding-left: 0;
+    list-style: none;
+    border-radius: 0.25rem;
+    justify-content: center !important;
+}
+
+.post .post-title a:focus {
+    color: #c22828;
+    text-decoration: underline;
+}
+
+.post .post-title a:hover {
+    color: #c22828;
+}
+
+#myBtn {
+    background-color: #c22828;
+}
+
+.logbook-wp-wp-blog-section .pagination span.current {
+    background: #c22828;
+    z-index: 1;
+    color: #ffffff;
+    border-color: #c22828;
+}
+
+.read-more:hover {
+    color: #c22828;
+}
+
+.logbook-wp-wp-blog-section .pagination .page-numbers:hover {
+    color: #fff;
+    background-color: #c22828;
+    border-color: #c22828;
+}
+
+.logbook-wp-main-navigation ul.logbook-wp-nav-menu > li > a {
+    color: #000000;
+    font-weight: 600;
+}
+
+.logbook-wp-main-navigation .sticky-nav {
+    background: #fff;
+    padding: 10px 0;
+}
+
+.byline {
+    text-transform: capitalize;
+    font-style: normal;
+    font-weight: 500;
+    color: #c22828;
+    font-size: 12px;
+}
+
+.posted-on {
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    color: #c22828;
+}
+
+.logbook-wp-wp-blog-section .blog-wrap .content-part .category-name a {
+    background-color: #c22828;
+}
+
+.widget_search .wp-block-search .wp-block-search__button {
+    background: #c22828;
+    color: #fff;
+}
+
+.logbook-wp-wp-blog-section .content-part .block:before {
+    background-color: #c22828;
+}
+
+.wp-block-latest-comments .wp-block-latest-comments__comment-meta {
+    color: #c22828;
+}
+
+.widget-area .widget-title:after, .wp-block-group .wp-block-group__inner-container h2:after {
+    background-color: #c22828;
+}
+
+.widget-area .widget_archive ul li a:before, .wp-block-group .wp-block-archives li a:before {
+    color: #c22828;
+}
+
+.widget-area .widget_categories ul li a:before, .wp-block-group .wp-block-categories li a:before {
+    color: #c22828;
+}
+.logbook-wp-main-navigation ul.logbook-wp-nav-menu .current_page_item > a, .logbook-wp-main-navigation ul.logbook-wp-nav-menu .current-menu-item > a, .logbook-wp-main-navigation ul.logbook-wp-nav-menu .current_page_ancestor > a, .logbook-wp-main-navigation ul.logbook-wp-nav-menu .current-menu-ancestor > a {
+    color: #c22828;
+}
+
+.content-part a{
+    text-decoration: underline;
+}
+
+.form-submit .submit:hover {
+    background-color: #c22828;
+    color: #fff;
+}
+
+.form-submit .submit:focus {
+    background-color: #c22828;
+}
+
+.post{
+    border-bottom: 2px solid #c22828;
+    transition: all .3s ease-in-out;
+}
+
+.post:hover {
+    -webkit-transform: translate(0px, -20px);
+}
+
+.page_link a {
+    color: #c22828;
+    text-decoration: underline;
+}
+
+.comments-area .comment-content a {
+    color: #c22828;
+    text-decoration: underline;
+}
